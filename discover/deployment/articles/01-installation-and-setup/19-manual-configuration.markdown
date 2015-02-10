@@ -3,9 +3,12 @@
 You don't have to use the setup wizard to configure Liferay. The setup wizard
 behind the scenes creates a configuration file that you can create manually.
 Create a text file called `portal-ext.properties` in your Liferay Home folder.
-This file overrides default properties that come with Liferay. The first setting
-you'll override is the default configuration that points Liferay to the embedded
-HSQL database.
+This file overrides default properties that come with Liferay of which can be found 
+in the Liferay.war/WEB-INF/lib/portal-impl.jar/portal.properties. This file contains
+all the portal properties, and their default values, found in Liferay Portal, all of
+which can be overridden through the use of a `portal-ext.properties` file in your
+Liferay Home folder. The first setting you'll override is the default configuration
+that points Liferay to the embedded HSQL database.
 
 As stated above, there are two ways to set up the connection:
 
