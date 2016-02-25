@@ -165,7 +165,7 @@ the following line:
 Then add the following `JAVA_OPTS` assignment one line above the
     `:JAVA_OPTS_SET` line found at end of the file:
 
-        set "JAVA_OPTS=%JAVA_OPTS% -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Djava.security.manager -Djava.security.policy=$JBOSS_HOME/bin/server.policy -Djboss.home.dir=$JBOSS_HOME -Duser.timezone=GMT -Xmx1024m -XX:MaxPermSize=256m"
+        set "JAVA_OPTS=%JAVA_OPTS% -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Djava.security.manager -Djava.security.policy=server.policy -Duser.timezone=GMT -Xmx1024m -XX:MaxPermSize=256m"
 
 On Unix, merge the following values into your settings for `JAVA_OPTS`, 
 replacing any matching attributes with the ones found in the assignment
